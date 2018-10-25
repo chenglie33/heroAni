@@ -5,13 +5,14 @@
 `注意事项`  
 App项目的目录结构中必须包含class元素"page" 它的大小将是你的浏览器可视窗口的高度，非移动端项目可以不需要这个元素   
 ###移动端的div结构
+``` bash
     |--html   
       |--body   
         |--transition   
           |--keep-alive(可选)   
             |--component || router-view
               |--page(page的情况主要是考虑到移动端界面跳转，每个页面的滚动距离是不相同的)
-
+```
 ##效果演示
 
 ## example
