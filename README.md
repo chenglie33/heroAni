@@ -14,7 +14,7 @@ App项目的目录结构中必须包含class元素"page" 它的大小将是你�
               |--page(page的情况主要是考虑到移动端界面跳转，每个页面的滚动距离是不相同的)
 ```
 ##效果演示
-![Image text](https://thumbnail0.baidupcs.com/thumbnail/68f0c4505e892b0b806dd52157fea147?fid=1363116768-250528-899909767844393&time=1540450800&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-YTrNwhRlPinb9dp%2Fpy8mqDWGaTs%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=9209307146174773140&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
+![Image text](https://thumbnail0.baidupcs.com/thumbnail/ae1b6483fa94b2562916821382cafab5?fid=1363116768-250528-185018506346328&time=1540454400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-S8UMDX58VEFPKXnQFM7n1ScR7Uk%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=9209871689930608651&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
 ## example
 ``` bash
 # step 1
