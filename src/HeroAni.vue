@@ -1,5 +1,5 @@
 <template>
-  <div class="rongqi" ref="imgs" style="width: 100%">
+  <div class="rongqi" ref="imgs" style="width: 100%" @click="callbacks">
     <slot></slot>
   </div>
 </template>
@@ -24,6 +24,9 @@
     destroyed() {
     },
     methods: {
+      callbacks() {
+        this.$emit('heroMethod')
+      },
       initHero() {
         if (this.AniPubArr.get('scorllUp') !== undefined) {
           this.$refs.imgs.style.opacity = 0;
@@ -43,7 +46,7 @@
         this.AniPub('scorllUp', this.master === 'true' ? document.getElementsByClassName('page')[0].scrollTop : 0);
         // 固定当前元素必须在此位置不会发生变化（动画依据此方法）元素距离顶部的距离-滚动的距离
         // console.log(document.documentElement.scrollTop);
-        let longs = this.$refs.imgs.getBoundingClientRect().top - document.documentElement.scrollTop;
+        let longs = this.$refs.imgs.offsetTop - document.getElementsByClassName('page')[0].scrollTop;
         // 处理方案添加fixed 创建fexed模态框
         var fixedmaster = document.createElement('div');
         fixedmaster.id = 'hero-fixed';
@@ -59,7 +62,7 @@
         fixedmaster.children[0].style.overflow = 'hidden'
         fixedmaster.children[0].id = 'hero-fixed-img';
         fixedmaster.children[0].style.width = this.$refs.imgs.getBoundingClientRect().width + 'px';
-
+        fixedmaster.children[0].style.height = this.$refs.imgs.getBoundingClientRect().height + 'px';
         // this.$refs.imgs.style.top = this.$refs.imgs.getBoundingClientRect().top + 'px';
         document.body.appendChild(fixedmaster);
         this.$refs.imgs.style.opacity = 0;
@@ -67,8 +70,8 @@
     }
   };
 </script>
-<style scoped>
-  .rongqi{
+<style>
+  .rongqi {
 
     width: 100%;
     height: 100%;
