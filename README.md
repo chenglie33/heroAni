@@ -14,7 +14,7 @@ App项目的目录结构中必须包含class元素"page" 它的大小将是你�
               |--page(page的情况主要是考虑到移动端界面跳转，每个页面的滚动距离是不相同的)
 ```
 ##  效果演示    
-![image](https://github.com/chenglie33/heroAni/blob/master/WeChatSight186.gif)
+![image](https://github.com/chenglie33/heroAni/blob/master/WeChatSight174-2.gif)
 ## example
 ``` bash
 # step 1
