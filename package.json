@@ -1,7 +1,7 @@
 {
   "name": "heroani",
   "description": "共享元素动画Shared element animation",
-  "version": "0.0.3",
+  "version": "1.1.5",
   "author": "cl",
   "license": "MIT",
   "private": false,
@@ -16,8 +16,10 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "vue": "^2.5.11",
-    "tween.js": "^16.6.0"
+    "build": "^0.1.4",
+    "postcss-import": "^12.0.1",
+    "tween.js": "^16.6.0",
+    "vue": "^2.5.11"
   },
   "browserslist": [
     "> 1%",

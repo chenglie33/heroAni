@@ -18,7 +18,7 @@ App项目的目录结构中必须包含class元素"page" 它的大小将是你�
 ## example
 ``` bash
 # step 1
-npm install HeroAni --save
+npm i heroani --save
 
 # step 2
 import {HeroAni} from 'heroani';
